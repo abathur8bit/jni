@@ -6,11 +6,12 @@ You either need **cmake**, or know how to build a shared lib. I use cmake since 
 
 # Building and running
 ## Linux/Mac
+```
 $ cmake CMakeLists.txt
 $ make
 $ javac -d . src/java/App.java
 $ java -Djava.library.path=. App
-
+```
 # Windows
 TODO
 
