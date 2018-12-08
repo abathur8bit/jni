@@ -10,6 +10,6 @@ JNIEXPORT jint JNICALL Java_App_print(JNIEnv * env, jobject obj, jstring string)
 
     const char *str = env->GetStringUTFChars(string, 0);
     printf("%s\n",str);
-    (*env).ReleaseStringUTFChars(string, str);
+    env->ReleaseStringUTFChars(string, str);
     return 0;
 }
