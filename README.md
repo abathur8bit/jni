@@ -5,10 +5,17 @@ Java.
 # Requirements
 You need cmake, or know how to build a shared lib. I use cmake since a shared lib is a .dll in Windows, .so in Linux and .dylib in Mac. CMake is a little more cross platform friendly.
 
-# Building Linux/Mac
+# Building and running
+## Linux/Mac
 $ cmake CMakeLists.txt
 $ make
 $ javac -d . src/java/App.java
 $ java -Djava.library.path=. App
 
-# The Java piece
+# How it works
+
+## The Java piece
+
+##C++ Piece
+
+
