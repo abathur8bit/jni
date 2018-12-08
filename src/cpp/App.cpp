@@ -1,6 +1,4 @@
-#include "jni.h"
-
-#include <curses.h>
+#include "App.h"
 
 JNIEXPORT jint JNICALL Java_App_add(JNIEnv *env, jobject obj, jint num)
 {

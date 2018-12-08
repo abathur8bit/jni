@@ -10,5 +10,5 @@ include_directories("/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents
 include_directories("/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/include")
 include_directories("/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/include/linux")
 
-add_library(jni SHARED src/cpp/jni.cpp src/cpp/jni.h)
+add_library(jni SHARED src/cpp/App.cpp src/cpp/App.h)
 target_link_libraries(jni ${CURSES_LIBRARIES} )
