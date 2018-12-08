@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
     	App app = new App();
-    	System.loadLibrary("jni");
+    	System.loadLibrary("App");
         int n = app.add(21);
         System.out.println( "Hello World, the answer is "+n+".");
         app.print("The quick brown fox jumps over the lazy dog.");

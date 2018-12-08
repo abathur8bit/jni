@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(jni)
+project(App)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -10,5 +10,5 @@ include_directories("/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents
 include_directories("/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/include")
 include_directories("/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/include/linux")
 
-add_library(jni SHARED src/cpp/App.cpp src/cpp/App.h)
-target_link_libraries(jni ${CURSES_LIBRARIES} )
+add_library(App SHARED src/cpp/App.cpp src/cpp/App.h)
+target_link_libraries(App ${CURSES_LIBRARIES} )
